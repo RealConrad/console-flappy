@@ -4,8 +4,8 @@
 #include "Bird.hpp"
 #include <vector>
 
-#define PIPE_GAP 5
-#define PIPE_FREQUENCY 20  // Distance between pipes
+#define PIPE_GAP 10
+#define PIPE_FREQUENCY 20 // Distance between pipes
 
 class Game {
 private:
@@ -24,7 +24,10 @@ public:
     void drawBird() const;
     void drawPipes() const;
     void updatePipes();
+    void resetGame();
+    void gameOver();
+    void startGame();
     bool checkCollision();
 };
 
-#endif // GAME_HPP
+#endif
