@@ -16,7 +16,7 @@ Before installing and running ConsoleFlappy, ensure you have the following insta
 
 Run the following command:
 ```bash
-curl -o- https://raw.githubusercontent.com/RealConrad/ConsoleFlappy/master/scripts/setup_cflappy.sh | bash
+curl -o- https://raw.githubusercontent.com/RealConrad/ConsoleFlappy/main/scripts/setup_cflappy.sh | bash
 ```
 
 Or you can do it manually here:
