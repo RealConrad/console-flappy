@@ -36,9 +36,13 @@ else
     exit 1
 fi
 
+# Add alias to the shell profile if it doesn't already exist
 if ! grep -q 'alias cflappy=' "$PROFILE"; then
     echo "alias cflappy='$GAME_DIR/ConsoleFlappy'" >> "$PROFILE"
     echo "Alias 'cflappy' created for $SHELL. You might need to restart the terminal or source your profile."
     echo "source $PROFILE"
 else
-    echo "Alias 'cflappy
+    echo "Alias 'cflappy' already set up in $PROFILE."
+fi
+
+echo "Installation and setup complete! Type 'cflappy' to start playing ConsoleFlappy."
