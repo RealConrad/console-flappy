@@ -15,7 +15,7 @@ Before installing and running ConsoleFlappy, ensure you have the following insta
 ### Via Curl
 Run the following command:
 ```bash
-curl -o- https://raw.githubusercontent.com/RealConrad/ConsoleFlappy/main/scripts/setup_cflappy.sh | bash
+curl -o- https://raw.githubusercontent.com/RealConrad/console-flappy/main/scripts/setup_cflappy.sh | bash
 ```
 
 The script executed above will add an alias for you. So just run:
