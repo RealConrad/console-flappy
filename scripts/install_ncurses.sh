@@ -22,7 +22,7 @@ else
 		which brew > /dev/null || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 		brew install ncurses
 	else
-		echo "Unsupported operating system."
+		echo "Unsupported operating system. Please install ncurses manually."
 		exit 1
 	fi
 fi

@@ -28,6 +28,6 @@ re: fclean all
 
 install_deps:
 	@echo "Checking for ncurses..."
-	@./install_ncurses.sh
+	@./scripts/install_ncurses.sh
 
 .PHONY: all clean fclean re install_deps

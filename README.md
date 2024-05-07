@@ -13,6 +13,14 @@ Before installing and running ConsoleFlappy, ensure you have the following insta
 
 ## Installation
 ### Clone the Repository
+
+Run the following command:
+```bash
+curl -o- https://raw.githubusercontent.com/RealConrad/ConsoleFlappy/master/scripts/setup_cflappy.sh | bash
+```
+
+Or you can do it manually here:
+
 Start by cloning the repository to your local machine:
 
 ```bash
