@@ -12,17 +12,19 @@ Before installing and running ConsoleFlappy, ensure you have the following insta
 - A C++ compiler (g++ or clang)
 
 ## Installation
-### Clone the Repository
-
+### Via Curl
 Run the following command:
 ```bash
 curl -o- https://raw.githubusercontent.com/RealConrad/ConsoleFlappy/main/scripts/setup_cflappy.sh | bash
 ```
 
-Or you can do it manually here:
+The script executed above will add an alias for you. So just run:
+```bash
+cflappy
+```
 
-Start by cloning the repository to your local machine:
-
+### Manually
+Clone the repository:
 ```bash
 git clone https://yourrepositorylink.com/ConsoleFlappy.git
 cd ConsoleFlappy
