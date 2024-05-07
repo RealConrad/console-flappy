@@ -1,14 +1,13 @@
-NAME		:= ConsoleFlappy
-CXX			:= c++
-CXXFLAGS	:= -Wall -Wextra -Werror -g
-LDFLAGS		:= -lncurses
-VPATH		:= ./srcs/
-SRCS		:= main.cpp Game.cpp
-OBJ_DIR		:= ./objs
-OBJS		:= $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
+NAME       := ConsoleFlappy
+CXX        := c++
+CXXFLAGS   := -Wall -Wextra -Werror -g
+LDFLAGS    := -lncurses
+VPATH      := ./srcs/
+SRCS       := main.cpp Game.cpp
+OBJ_DIR    := ./objs
+OBJS       := $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 
-
-all: $(NAME)
+all: install_deps $(NAME)
 
 $(NAME): $(OBJS)
 	$(CXX) $(OBJS) -o $(NAME) $(LDFLAGS)
@@ -27,10 +26,8 @@ fclean: clean
 
 re: fclean all
 
-# install_deps:
-# 	@echo "Checking and installing ncurses..."
-# 	@which ncurses5-config || which ncursesw5-config || $(INSTALL_NCURSES)
-
-# INSTALL_NCURSES := $(shell ./install_ncurses.sh)
+install_deps:
+	@echo "Checking for ncurses..."
+	@./install_ncurses.sh
 
 .PHONY: all clean fclean re install_deps
