@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-REPO_URL="https://github.com/RealConrad/ConsoleFlappy.git"
+REPO_URL="https://github.com/RealConrad/console-flappy.git"
 GAME_DIR="$HOME/ConsoleFlappy"
 
 # Check if the directory already exists
